@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link type="text/css" href="{% static 'fallacies/css/styles.css' %}" rel="stylesheet" />
+</head>
+<body>
+<div>
+<header id="shapka">
+        <li id="main-li"><a>Главная</a></li>
+</header>
+    </div>
+<h1>ВИДЫ ЛОГИЧЕСКИХ ОШИБОК</h1>
+    {% for f in fallacies %}
+      <div class="fallacy"><a class="fallacy-name" href="{% url 'fallacy' f.id %}">
+        <h2 class="fallacy-title">{{f.title}}</h2></a>
+        <p><img class="fallacy-img" src="{{f.image.url}}" width="50" height="50" alt="lorem"></p>
+      </div>
+    {% endfor %}
+    </div>
+{% block h1 %}
+{% endblock %}
+</body>
+</html>
