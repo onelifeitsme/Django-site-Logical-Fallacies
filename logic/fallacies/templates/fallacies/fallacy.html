@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+        <link type="text/css" href="{% static 'fallacies/css/fallacy_styles.css' %}" rel="stylesheet" />
+</head>
+<body>
+<div class="fallacy-top-block">
+    <h1 class="fallacy-h1">{{fallacy.title}}</h1>
+</div>
+
+<div class="navigate">
+    <button class="fallacy-navigate previous" type="submit" onClick="location.href='/fallacy/{{previous_fallacy.id}}'">☚ Предыдущая</button>
+    <img class="fallacy-img" src="{{fallacy.image.url}}" alt="lorem">
+    <button class="fallacy-navigate next" type="submit" onClick="location.href='/fallacy/{{next_fallacy.id}}'">Следующая ☛</button>
+</div>
+
+<div class="description-block">
+<p class="fallacy-content">{{fallacy.content}}</p>
+</div>
+<div class="examples">
+    <div class="example 1">
+        <h1 class="exampleh1">Пример 1</h1>
+        <div class="example-text 1">{{fallacy.example1_text}}</div>
+    </div>
+    <div class="example 2">
+        <h1 class="exampleh1">Пример 2</h1>
+        <div class="example-text 2">{{fallacy.example2_text}}</div>
+    </div>
+</div>
+<div class="bottom-button">
+<button class="go-home" type="submit" onClick="location.href='{% url 'home' %}'">К списку ошибок</button>
+</div>
+
+</body>
+
+</html>

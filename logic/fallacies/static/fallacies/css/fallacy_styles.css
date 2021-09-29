@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    background-color: #d4f7ff;
+}
+
+.fallacy-top-block {
+    width: 90%;
+    height: 10%;
+    font-size: 40px;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.navigate {
+    display: flex;
+    justify-content: center;
+
+}
+
+.fallacy-navigate {
+width: 10%;
+height: 5%;
+margin: 3%;
+padding: 1%;
+}
+
+.fallacy-img {
+padding: 1%;
+}
+
+.fallacy-navigate-next {
+
+}
+
+.description-block {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    border: 2px solid black;
+
+}
+.fallacy-content {
+    font-size: 40px;
+}
+
+.fallacy-h1 {
+
+}
+
+.fallacy_content {
+    border: 2px solid black;
+
+}
+
+.fallacy-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.examples
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+
+}
+
+.example {
+    width: 40%;
+    border: 2px solid black;
+
+
+}
+
+.exampleh1 {
+    background-color: aqua;
+    text-align: center;
+}
+
+.example-text {
+    font-size: 25px;
+    background-color: #cdc9ff;
+    }
+
+
+.bottom-button {
+    display: flex;
+    justify-content: center;
+
+}
+
+.go-home {
+    height: 40px;
+    width: 130px;
+
+
+}
