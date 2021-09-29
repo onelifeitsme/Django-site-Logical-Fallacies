@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>{{title}}</title>
@@ -8,19 +8,20 @@
 </head>
 <body>
 <div>
-<header id="shapka">
-        <li id="main-li"><a>Главная</a></li>
+<header>
 </header>
     </div>
 <h1>ВИДЫ ЛОГИЧЕСКИХ ОШИБОК</h1>
-    {% for f in fallacies %}
-      <div class="fallacy"><a class="fallacy-name" href="{% url 'fallacy' f.id %}">
-        <h2 class="fallacy-title">{{f.title}}</h2></a>
+<div class="all-fallcies-block">
+{% for f in fallacies %}
+    <div class="fallacy-block"><a class="fallacy-url" href="{% url 'fallacy' f.id %}">
+        <h2 class="fallacy-name">{{f.title}}</h2></a>
         <p><img class="fallacy-img" src="{{f.image.url}}" width="50" height="50" alt="lorem"></p>
-      </div>
-    {% endfor %}
-    </div>
+        </div>
+{% endfor %}
+</div>
 {% block h1 %}
 {% endblock %}
 </body>
 </html>
+

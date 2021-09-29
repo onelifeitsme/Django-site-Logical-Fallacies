@@ -4,23 +4,27 @@ body {
 }
 
 h1 {
+    font-family: Georgia;
     text-align: center;
     font-size: 100px;
     margin: 10px;
+    padding: 2%;
+
 
 }
 
-cvbgdfgdfgd
+.all-fallcies-block {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
 
 
+}
 
-
-
-.fallacy {
+.fallacy-block {
     width: 350px;
     height: 100px;
-    display: inline-block;
     margin: 5px;
     padding: 7px;
     box-shadow: 5px 5px 2px 2px #aaa;
@@ -28,15 +32,23 @@ cvbgdfgdfgd
     background-color: #cdc9ff;
 }
 
-.fallacy-title{
+.fallacy-name {
     text-align: center;
+    text-decoration: none;
+    max-height: 15%;
+    margin-top: 0%;
+    color: #000000;
 }
 .fallacy-url {
     text-decoration: none;
 }
 
 .fallacy-img {
-    display: flex;
-    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    margin-left: 40%;
+
 }
 
