@@ -24,9 +24,17 @@ h1 {
     font-size: 100px;
     margin: 10px;
     padding: 2%;
-
-
+    text-shadow: #cdc9ff;
 }
+.headerh1 {
+    text-shadow: 1px 1px 2px black, 0 0 1em red; /* Параметры тени */
+    color: white; /* Белый цвет текста */
+    font-size: 4em; /* Размер надписи */
+   }
+
+
+
+
 
 .all-fallcies-block {
     display: inline-flex;
@@ -48,20 +56,23 @@ h1 {
     outline: 1px solid #000;
     background-color: #cdc9ff;
     border-radius: 20%;
+
+}
+
+.fallacyblochurl {
+    text-decoration: none;
 }
 
 .fallacy-name {
     text-align: center;
-    text-decoration: none;
     max-height: 15%;
     margin-top: 0%;
     color: #000000;
     font-size: 23px;
     padding-top: 8px;
-}
-.fallacy-url {
     text-decoration: none;
 }
+
 
 .fallacy-img {
     width: 100px;

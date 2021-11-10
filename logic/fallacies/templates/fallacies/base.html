@@ -11,15 +11,18 @@
 <header>
 </header>
     </div>
-<h1>ВИДЫ ЛОГИЧЕСКИХ ОШИБОК</h1>
+<h1 class="headerh1">ВИДЫ ЛОГИЧЕСКИХ ОШИБОК</h1>
 <div class="all-fallcies-block">
 {% for f in fallacies %}
-    <div class="fallacy-block"><a class="fallacy-url" href="{% url 'fallacy' f.id %}">
-        <h2 class="fallacy-name">{{f.title}}</h2></a>
+    <div class="fallacy-block">
+    <a href="{% url 'fallacy' f.id %}" class="fallacyblochurl">
+        <h2 class="fallacy-name">{{f.title}}</h2>
         <p><img class="fallacy-img" src="{{f.image.url}}" width="50" height="50" alt="lorem"></p>
+
+    </a>
         </div>
 {% endfor %}
-</div>
+
 {% block h1 %}
 {% endblock %}
 </body>

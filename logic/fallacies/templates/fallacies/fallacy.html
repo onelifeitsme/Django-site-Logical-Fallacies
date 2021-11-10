@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="fallacy-top-block">
-    <h1 class="fallacy-h1">{{fallacy.title}}</h1>
+    <h1 class="headerh1">{{fallacy.title}}</h1>
 </div>
 
 <div class="navigate">
@@ -17,9 +17,11 @@
     <a href='/fallacy/{{next_fallacy.id}}' class="button19">Следующая</a>
 </div>
 
+
 <div class="description-block">
 <p class="fallacy-content">{{fallacy.content}}</p>
 </div>
+
 <div class="examples">
     <div class="example 1">
         <div class="blockh1example">
@@ -40,7 +42,8 @@
     </div>
 </div>
 <div class="bottom-button">
-<button class="go-home" type="submit" onClick="location.href='{% url 'home' %}'">К списку ошибок</button>
+    <a href='{% url "home" %}' class="button19">Список ошибок</a>
+
 </div>
 
 </body>
