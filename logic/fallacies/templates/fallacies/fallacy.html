@@ -12,9 +12,9 @@
 </div>
 
 <div class="navigate">
-    <button class="fallacy-navigate previous" type="submit" onClick="location.href='/fallacy/{{previous_fallacy.id}}'">☚ Предыдущая</button>
+    <a href='/fallacy/{{previous_fallacy.id}}' class="button19">Предыдущая</a>
     <img class="fallacy-img" src="{{fallacy.image.url}}" alt="lorem">
-    <button class="fallacy-navigate next" type="submit" onClick="location.href='/fallacy/{{next_fallacy.id}}'">Следующая ☛</button>
+    <a href='/fallacy/{{next_fallacy.id}}' class="button19">Следующая</a>
 </div>
 
 <div class="description-block">
@@ -22,12 +22,21 @@
 </div>
 <div class="examples">
     <div class="example 1">
+        <div class="blockh1example">
         <h1 class="exampleh1">Пример 1</h1>
-        <div class="example-text 1">{{fallacy.example1_text}}</div>
+            </div>
+        <div class="exampletextblock">
+        <h2 class="example-text 1">{{fallacy.example1_text}}</h2>
+            </div>
     </div>
     <div class="example 2">
+        <div class="blockh1example">
+
         <h1 class="exampleh1">Пример 2</h1>
-        <div class="example-text 2">{{fallacy.example2_text}}</div>
+            </div>
+        <div class="exampletextblock">
+        <h2 class="example-text 2">{{fallacy.example2_text}}</h2>
+        </div>
     </div>
 </div>
 <div class="bottom-button">
