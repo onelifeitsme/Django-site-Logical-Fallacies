@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     background: linear-gradient(45deg, #fc00ff, #00dbde);
     height: 100%;
-    background-size: 200% 200%;
+    background-size: 300% 300%;
     animation: grad 10s ease infinite;
 }
 @keyframes grad {
@@ -19,7 +19,15 @@ html, body {
 
 
 
+.titlefallacy {
+    display: flex;
+    justify-content: center;
+}
+
+
 .fallacy-top-block {
+    display: flex;
+
     width: 90%;
     height: 10%;
     font-size: 40px;
@@ -44,7 +52,9 @@ padding: 1%;
 }
 
 .fallacy-img {
-padding: 1%;
+    padding: 1%;
+    margin-right: 80px;
+    margin-left: 80px;
 }
 
 .fallacy-navigate-next {
@@ -81,9 +91,9 @@ padding: 1%;
 }
 
 .headerh1 {
-    padding-left: 9%;
     text-shadow: 1px 1px 2px black, 0 0 1em red; /* Параметры тени */
     color: white; /* Белый цвет текста */
+    font-size: 4em;
 
 
 }
@@ -109,7 +119,9 @@ padding: 1%;
 }
 
 .example {
-    width: 40%;
+    display: inline-block;
+    width: 450px;
+    min-height: 700px;
     border: 2px solid black;
     border-radius: 3%;
     background: radial-gradient(black, transparent);
@@ -128,12 +140,22 @@ padding: 1%;
     margin: 2%;
     border: 2px solid black;
     background-color: snow;
+    min-height: 81%;
+
+
+
+
 }
 
 
 .example-text {
     font-size: 25px;
     margin: 20px;
+    min-height: 100%;
+    align-items: stretch
+
+
+
 
     }
 

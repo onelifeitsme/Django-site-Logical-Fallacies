@@ -7,15 +7,16 @@
         <link type="text/css" href="{% static 'fallacies/css/fallacy_styles.css' %}" rel="stylesheet" />
 </head>
 <body>
-<div class="fallacy-top-block">
+    <div class="titlefallacy">
     <h1 class="headerh1">{{fallacy.title}}</h1>
-</div>
+        </div>
 
-<div class="navigate">
-    <a href='/fallacy/{{previous_fallacy.id}}' class="button19">Предыдущая</a>
-    <img class="fallacy-img" src="{{fallacy.image.url}}" alt="lorem">
-    <a href='/fallacy/{{next_fallacy.id}}' class="button19">Следующая</a>
-</div>
+    <div class="navigate">
+        <a href='/fallacy/{{previous_fallacy.id}}' class="button19">Предыдущая</a>
+        <img class="fallacy-img" src="{{fallacy.image.url}}" alt="lorem">
+        <a href='/fallacy/{{next_fallacy.id}}' class="button19">Следующая</a>
+    </div>
+
 
 
 <div class="description-block">

@@ -2,9 +2,12 @@ html, body {
     margin: 0;
     background: linear-gradient(45deg, #fc00ff, #00dbde);
     height: 100%;
-    background-size: 200% 200%;
+    background-size: 700% 700%;
     animation: grad 10s ease infinite;
 }
+
+
+
 @keyframes grad {
     0% {
         background-position: 0 50%;
@@ -48,9 +51,9 @@ h1 {
 }
 
 .fallacy-block {
-    width: 350px;
+    width: 400px;
     height: 175px;
-    margin: 5px;
+    margin: 15px;
     padding: 7px;
     box-shadow: 5px 5px 2px 2px #aaa;
     outline: 1px solid #000;
